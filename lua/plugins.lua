@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
 
   -- common
   use { 'nvim-tree/nvim-tree.lua', requires = 'nvim-tree/nvim-web-devicons' }
+  use 'simrat39/symbols-outline.nvim'
   use 'windwp/nvim-autopairs'
   use 'lewis6991/gitsigns.nvim'
   use 'tpope/vim-fugitive'
