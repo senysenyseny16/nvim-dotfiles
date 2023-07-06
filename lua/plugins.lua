@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
   use { 'iamcco/markdown-preview.nvim' }
 
   -- visual
-  use 'navarasu/onedark.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
   use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
   use { 'kdheepak/tabline.nvim' }
   use { 'rainbowhxch/beacon.nvim' }
