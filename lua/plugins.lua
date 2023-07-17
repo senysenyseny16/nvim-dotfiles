@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
   -- visual
   use { "catppuccin/nvim", as = "catppuccin" }
   use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
-  use { 'kdheepak/tabline.nvim' }
+  use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use { 'rainbowhxch/beacon.nvim' }
 
   -- python
