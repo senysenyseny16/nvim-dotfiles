@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
   use 'ntpeters/vim-better-whitespace'
   use 'mhinz/vim-startify'
   use { 'nvim-treesitter/nvim-treesitter', requires = 'p00f/nvim-ts-rainbow', run = ':TSUpdate' }
-  use { 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim', tag = '0.1.0' }
+  use { 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim', tag = '0.1.4' }
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   use { 'folke/trouble.nvim', requires = 'kyazdani42/nvim-web-devicons' }
   use { 'danymat/neogen', requires = 'nvim-treesitter/nvim-treesitter' }
