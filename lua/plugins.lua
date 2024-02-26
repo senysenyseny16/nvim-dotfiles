@@ -1,7 +1,4 @@
 return {
-  -- packer can manage itself
-  'wbthomason/packer.nvim',
-
   -- LSP
   'neovim/nvim-lspconfig',
   'hrsh7th/nvim-cmp', -- Autocompletion plugin
@@ -21,13 +18,13 @@ return {
   { 'nvim-treesitter/nvim-treesitter', dependencies = 'p00f/nvim-ts-rainbow', build = ':TSUpdate' },
   { 'nvim-telescope/telescope.nvim', dependencies = 'nvim-lua/plenary.nvim', version = '0.1.4' },
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
-  { 'folke/trouble.nvim', dependencies = 'kyazdani42/nvim-web-devicons' },
+  { 'folke/trouble.nvim', dependencies = 'nvim-tree/nvim-web-devicons' },
   { 'danymat/neogen', dependencies = 'nvim-treesitter/nvim-treesitter' },
   { 'iamcco/markdown-preview.nvim' },
 
   -- visual
   { "catppuccin/nvim", name = "catppuccin" },
-  { 'nvim-lualine/lualine.nvim', dependencies = { 'kyazdani42/nvim-web-devicons', lazy = true } },
+  { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons', lazy = true } },
   { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
   { 'rainbowhxch/beacon.nvim' },
 
