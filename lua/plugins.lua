@@ -1,36 +1,36 @@
-return require('packer').startup(function(use)
+return {
   -- packer can manage itself
-  use 'wbthomason/packer.nvim'
+  'wbthomason/packer.nvim',
 
   -- LSP
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
-  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
-  use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
-  use 'L3MON4D3/LuaSnip' -- Snippets plugin
-  use { 'nvimtools/none-ls.nvim', requires = 'nvim-lua/plenary.nvim' }
+  'neovim/nvim-lspconfig',
+  'hrsh7th/nvim-cmp', -- Autocompletion plugin
+  'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
+  'saadparwaiz1/cmp_luasnip', -- Snippets source for nvim-cmp
+  'L3MON4D3/LuaSnip', -- Snippets plugin
+  { 'nvimtools/none-ls.nvim', dependencies = 'nvim-lua/plenary.nvim' },
 
   -- common
-  use { 'nvim-tree/nvim-tree.lua', requires = 'nvim-tree/nvim-web-devicons' }
-  use 'simrat39/symbols-outline.nvim'
-  use 'windwp/nvim-autopairs'
-  use 'lewis6991/gitsigns.nvim'
-  use 'tpope/vim-fugitive'
-  use 'ntpeters/vim-better-whitespace'
-  use 'mhinz/vim-startify'
-  use { 'nvim-treesitter/nvim-treesitter', requires = 'p00f/nvim-ts-rainbow', run = ':TSUpdate' }
-  use { 'nvim-telescope/telescope.nvim', requires = 'nvim-lua/plenary.nvim', tag = '0.1.4' }
-  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
-  use { 'folke/trouble.nvim', requires = 'kyazdani42/nvim-web-devicons' }
-  use { 'danymat/neogen', requires = 'nvim-treesitter/nvim-treesitter' }
-  use { 'iamcco/markdown-preview.nvim' }
+  { 'nvim-tree/nvim-tree.lua', dependencies = 'nvim-tree/nvim-web-devicons' },
+  'simrat39/symbols-outline.nvim',
+  'windwp/nvim-autopairs',
+  'lewis6991/gitsigns.nvim',
+  'tpope/vim-fugitive',
+  'ntpeters/vim-better-whitespace',
+  'mhinz/vim-startify',
+  { 'nvim-treesitter/nvim-treesitter', dependencies = 'p00f/nvim-ts-rainbow', build = ':TSUpdate' },
+  { 'nvim-telescope/telescope.nvim', dependencies = 'nvim-lua/plenary.nvim', version = '0.1.4' },
+  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
+  { 'folke/trouble.nvim', dependencies = 'kyazdani42/nvim-web-devicons' },
+  { 'danymat/neogen', dependencies = 'nvim-treesitter/nvim-treesitter' },
+  { 'iamcco/markdown-preview.nvim' },
 
   -- visual
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
-  use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
-  use { 'rainbowhxch/beacon.nvim' }
+  { "catppuccin/nvim", name = "catppuccin" },
+  { 'nvim-lualine/lualine.nvim', dependencies = { 'kyazdani42/nvim-web-devicons', lazy = true } },
+  { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
+  { 'rainbowhxch/beacon.nvim' },
 
   -- python
-  use 'Vimjas/vim-python-pep8-indent'
-end)
+  'Vimjas/vim-python-pep8-indent',
+}
