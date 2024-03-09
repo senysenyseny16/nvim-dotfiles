@@ -1,23 +1,23 @@
 local opt = vim.opt
 
-opt.fileformat = 'unix'
-opt.encoding = 'utf-8'
-opt.fileencoding = 'utf-8'
-opt.spelllang= { 'en_us', 'ru' }
+opt.fileformat = "unix"
+opt.encoding = "utf-8"
+opt.fileencoding = "utf-8"
+opt.spelllang = { "en_us", "ru" }
 
 opt.tabstop = 4
 opt.shiftwidth = 4
 opt.softtabstop = 4
-opt.colorcolumn = '120'
+opt.colorcolumn = "120"
 opt.expandtab = true
 opt.number = true
 opt.wrap = false
 
 -- to treat all numerals as decimal
-opt.nrformats = ''
+opt.nrformats = ""
 
 -- enable mouse
-opt.mouse = 'a'
+opt.mouse = "a"
 
 -- enable global statusline
 opt.laststatus = 3
@@ -29,4 +29,4 @@ opt.hidden = true
 opt.termguicolors = true
 
 -- set update time
-vim.api.nvim_set_option('updatetime', 250)
+vim.api.nvim_set_option("updatetime", 250)
