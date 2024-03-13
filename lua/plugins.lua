@@ -1,5 +1,8 @@
 return {
 	-- LSP
+	{ "VonHeikemen/lsp-zero.nvim", branch = "v3.x" },
+	"williamboman/mason.nvim",
+	"williamboman/mason-lspconfig.nvim",
 	"neovim/nvim-lspconfig",
 	"hrsh7th/nvim-cmp", -- Autocompletion plugin
 	"hrsh7th/cmp-nvim-lsp", -- LSP sources for nvim-cmp

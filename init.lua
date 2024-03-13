@@ -14,9 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 require("settings")
 require("lazy").setup("plugins")
 
-require("plugin_settings.autocompletion")
-require("plugin_settings.lspconfig")
-require("plugin_settings.nullls")
+require("plugin_settings.lsp-zero") -- lspconfig, cmp, mason, null-ls
 require("plugin_settings.tree")
 require("plugin_settings.symbolsoutline")
 require("plugin_settings.catppuccin")
