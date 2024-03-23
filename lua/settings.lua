@@ -28,5 +28,8 @@ opt.hidden = true
 -- 24-bit RGB colors
 opt.termguicolors = true
 
+-- highlight current line
+opt.cursorline = true
+
 -- set update time
 vim.api.nvim_set_option("updatetime", 250)
