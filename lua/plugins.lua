@@ -12,6 +12,8 @@ return {
 	"L3MON4D3/LuaSnip", -- Snippets plugin
 	"saadparwaiz1/cmp_luasnip", -- Snippets source for nvim-cmp
 	{ "nvimtools/none-ls.nvim", dependencies = "nvim-lua/plenary.nvim" },
+	-- codeium
+	{ "Exafunction/codeium.vim", event = "BufEnter" },
 
 	-- common
 	{ "nvim-tree/nvim-tree.lua", dependencies = "nvim-tree/nvim-web-devicons" },
